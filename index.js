@@ -46,6 +46,7 @@ const check=()=>{
     if (lis.length==9){
         document.querySelector('#over img').style.width='200px';
         looseSound.play();
+        document.getElementsByClassName('turn')[0].style.display="none"
     }
 }
 
@@ -79,6 +80,7 @@ document.getElementById('reset').addEventListener('click',()=>{
     document.querySelector('#gif img').style.width='0px';
     document.querySelector('#over img').style.width='0px';
     document.getElementsByClassName('turn')[0].style.color='black';
+    document.getElementsByClassName('turn')[0].style.display="block"
 })
 
  
